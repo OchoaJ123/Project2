@@ -63,7 +63,8 @@ a {
     text-align: center;
     position: absolute;
     height: 100vh;
-    animation: moveText 5s linear;
+    background-color: #3C3B6E;
+    animation: moveText 3s linear;
 }
 
 .info4{
@@ -75,8 +76,7 @@ a {
     width: 100%;
     height: 100%;
     color: 	#eefcff;
-    /* background: linear-gradient(180deg, #00bfff, #00aaff);  */
-    background-color: #0047AB;
+    background-color: #3C3B6E;
     animation: wavyText 2s infinite;
   }
 
@@ -88,6 +88,19 @@ a {
     margin-top: 300px;
     margin-bottom: 30px;
 }
+
+.info6 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    color: white;
+    background-color: #3C3B6E;
+    animation: increaseSize 2s ease infinite alternate;
+}
+
 
 .button  {
     display: inline-block;
@@ -184,10 +197,10 @@ a {
 
 @keyframes change-color {
     0% {
-        color: #ff6b35; /* Sunset orange color */
+        color: #B42033; /* Sunset orange color */
     }
     100% {
-        color: #3498db; /* Different color (e.g., blue) */
+        color: #3C3B6E; /* Different color (e.g., blue) */
     }
 }
 
@@ -222,14 +235,17 @@ a {
     }
   }
 
-  /* @keyframes changeBackgroundColor {
+  @keyframes increaseSize {
     0% {
-      background-color: #B42033;
-    }
-    50% {
-      background-color: #3C3B6E;
+        transform: scale(1);
     }
     100% {
-      background-color:  #CECECE;
+        transform: scale(1.5);
     }
-  } */
+}
+
+
+
+
+
+
