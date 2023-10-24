@@ -38,7 +38,6 @@ a {
     text-align: center;
     height: 100vh;
     overflow: hidden;
-    animation: changeBackgroundColor 6s linear infinite;
     background-color: #B42033;
     color: white;
 }
