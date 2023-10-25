@@ -8,7 +8,7 @@ html {
     font-family: 'Young Serif', serif;
     font-weight: 300;
     font-style: normal;
-    background-color: #f9f9f5;
+    background-color: #B42033;
     font-size: 50px;
 }
 
@@ -29,6 +29,7 @@ a {
     align-items: center;
     text-align: center;
     height: 100vh;
+    color: white;
 }
 
 .info2{
@@ -128,15 +129,17 @@ a {
 }
 
 #text-animation {
-    font-size: 60px;
-    animation: fill-screen 3s forwards, change-color 1s 3s forwards;
+    font-size: 50px;
+    padding-left: 10px;
+    animation: fill-screen 3s 1.5s forwards, change-color 1s 2s forwards;
 }
 
 #gradient {
     font-size: 50px;
     text-align: center;
-    
-    animation: gradientColor 5s ease-in-out infinite;
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    animation: neon-animation 1.5s infinite;
+    /* animation: gradientColor 5s ease-in-out infinite; */
 }
 
 .button:hover {
@@ -144,21 +147,32 @@ a {
     color: #fff; /* White text color on hover */
 }
 
-@keyframes gradientColor {
+/* @keyframes gradientColor {
     0% {
-        color: red;
+        color: #4f4cbf;
     }
     25% {
-        color: orange;
+        color: #5289d2;
     }
     50% {
-        color: yellow;
+        color: #d6c766;
     }
     75% {
-        color: green;
+        color:#8b0000;
     }
     100% {
-        color: blue;
+        color: #5a0000;
+    }
+} */
+
+@keyframes neon-animation {
+    0%, 100% {
+        color: #FFD700; /* Golden yellow color */
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    }
+    50% {
+        color: #FEB303; /* Text off color */
+        text-shadow: none;
     }
 }
 
@@ -190,13 +204,13 @@ a {
     }
     100% {
         font-size: 300px; /* Fill the whole screen */
-        color: #ff6b35; /* Sunset orange color */
+        color: white; /* Sunset orange color */
     }
 }
 
 @keyframes change-color {
     0% {
-        color: #B42033; /* Sunset orange color */
+        color: white; /* Sunset orange color */
     }
     100% {
         color: #3C3B6E; /* Different color (e.g., blue) */
