@@ -28,7 +28,6 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* font-size: 30px; */
     height: 100vh;
     color: white;
 }
@@ -107,22 +106,21 @@ a {
     display: inline-block;
     align-items: center;
     padding: 10px 20px;
-    background-color: transparent; /* No fill color */
-    color: #000; /* Text color */
+    background-color: transparent; 
+    color: #000; 
     font-size: 20px;
-    /* border: 2px solid #000;  */
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-    text-decoration: none; /* Remove underlines on links */
-    transition: background-color 0.3s; /* Add a smooth transition effect */
+    text-decoration: none; 
+    transition: background-color 0.3s; 
 }
 
 .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px; /* Center vertically in the viewport */
+    height: 100px; 
 }
 
 .yellow-frame {
@@ -141,39 +139,20 @@ a {
     text-align: center;
     text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
     animation: neon-animation 1.5s infinite;
-    /* animation: gradientColor 5s ease-in-out infinite; */
 }
 
 .button:hover {
-    background-color: #ffcc00; /* Red background on hover */
-    color: #fff; /* White text color on hover */
+    background-color: #ffcc00; 
+    color: #fff; 
 }
-
-/* @keyframes gradientColor {
-    0% {
-        color: #4f4cbf;
-    }
-    25% {
-        color: #5289d2;
-    }
-    50% {
-        color: #d6c766;
-    }
-    75% {
-        color:#8b0000;
-    }
-    100% {
-        color: #5a0000;
-    }
-} */
 
 @keyframes neon-animation {
     0%, 100% {
-        color: #FFD700; /* Golden yellow color */
+        color: #FFD700; 
         text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
     }
     50% {
-        color: #FEB303; /* Text off color */
+        color: #FEB303; 
         text-shadow: none;
     }
 }
@@ -181,41 +160,41 @@ a {
 @keyframes slide-up {
     0% {
         bottom: -100%;
-        background-color: transparent; /* Start with transparent background */
+        background-color: transparent; 
     }
     100% {
         bottom: 0;
-        background-color: #ffcc00; /* Yellow background fills the page */
+        background-color: #ffcc00; 
         color: white;
     }
 }
 
 @keyframes change-background {
     0% {
-        background-color: #ffcc00; /* Keep the yellow background color */
+        background-color: #ffcc00; 
     }
     100% {
-        background-color: #ff6b35; /* Change to sunset orange color */
+        background-color: #ff6b35; 
     }
 }
 
 @keyframes fill-screen {
     0% {
-        font-size: 60px; /* Initial font size */
-        color: transparent; /* Transparent text */
+        font-size: 60px; 
+        color: transparent; 
     }
     100% {
-        font-size: 300px; /* Fill the whole screen */
-        color: white; /* Sunset orange color */
+        font-size: 300px; 
+        color: white; 
     }
 }
 
 @keyframes change-color {
     0% {
-        color: white; /* Sunset orange color */
+        color: white; 
     }
     100% {
-        color: #3C3B6E; /* Different color (e.g., blue) */
+        color: #3C3B6E; 
     }
 }
 
